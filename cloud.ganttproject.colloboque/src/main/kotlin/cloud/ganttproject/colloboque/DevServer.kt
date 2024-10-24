@@ -50,7 +50,7 @@ class DevServerMain : CliktCommand() {
   private val pgHost by option("--pg-host", help = "Postgres host name").default("localhost")
   private val pgPort by option("--pg-port", help = "Postgres port").int().default(5432)
   private val pgSuperUser by option("--pg-super-user", help = "Postgres super user name").default("postgres")
-  private val pgSuperAuth by option("--pg-super-auth", help = "Postgres super user password").default("")
+  private val pgSuperAuth by option("--pg-super-auth", help = "Postgres super user password").default("1234")
 
   init {
     // TODO: is there a better place for this?

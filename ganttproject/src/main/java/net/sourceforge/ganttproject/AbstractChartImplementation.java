@@ -113,7 +113,7 @@ public abstract class AbstractChartImplementation implements TimelineChart, Zoom
     }
   }
 
-  public AbstractChartImplementation(IGanttProject project, UIFacade uiFacade, ChartModelBase chartModel,
+  protected AbstractChartImplementation(IGanttProject project, UIFacade uiFacade, ChartModelBase chartModel,
       ChartComponentBase chartComponent) {
     assert chartModel != null;
     myUiFacade = uiFacade;
